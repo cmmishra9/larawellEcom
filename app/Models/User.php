@@ -12,7 +12,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 
 // implements MustVerifyEmail
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
 
